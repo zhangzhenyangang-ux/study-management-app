@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff8e9">
+<title>Study Note</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #fff9ed;
+  color: #493a25;
+  font-family: sans-serif;
+}
+header {
+  padding: 24px 20px;
+}
+h1 { margin: 0; font-size: 27px; }
+main { padding: 0 16px 90px; }
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 18px;
+  margin-bottom: 15px;
+  box-shadow: 0 3px 12px #e9dfca55;
+}
+h2 { font-size: 17px; margin-top: 0; }
+.sub { color: #9b835e; font-size: 13px; }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.number { font-size: 27px; font-weight: bold; }
+button {
+  border: 0;
+  border-radius: 12px;
+  padding: 12px;
+  background: #f5d58b;
+  color: #493a25;
+  font-size: 15px;
+}
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 5px;
+}
+nav button {
+  background: transparent;
+  font-size: 12px;
+  padding: 5px;
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Study Note ☀️</h1>
+  <p class="sub">今日も少しずつ。</p>
+</header>
+<main>
+  <div class="card">
+    <h2>今日のおすすめ</h2>
+    <p>今日の勉強を始めよう！</p>
+    <p class="sub">復習状況をもとに学習内容を提案します。</p>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <h2>最新成績</h2>
+      <div class="number">--点</div>
+    </div>
+    <div class="card">
+      <h2>登録教科</h2>
+      <div class="number">0教科</div>
+    </div>
+  </div>
+  <div class="card">
+    <h2>今日の時間割</h2>
+    <p class="sub">時間割はまだ登録されていません。</p>
+  </div>
+  <div class="card">
+    <h2>復習のお知らせ</h2>
+    <p class="sub">復習が必要な問題はここに表示されます。</p>
+  </div>
+</main>
+<nav>
+  <button>⌂<br>ホーム</button>
+  <button>▤<br>教科</button>
+  <button>▧<br>プリント</button>
+  <button>▥<br>成績</button>
+  <button>⚙<br>設定</button>
+</nav>
+</body>
+</html>
